@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: BANKING
+    schema: RAW   # KEEP THIS - This is where the source tables live
+    tables:
+      - name: customers
+      - name: accounts
+      - name: transactions
