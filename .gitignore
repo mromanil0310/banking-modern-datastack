@@ -16,6 +16,8 @@ banking_dbt/seeds/
 banking_dbt/target/
 banking_dbt/tests/
 
+target/
+
 .env
 __pycache__/
 *.pyc
