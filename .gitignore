@@ -1,19 +1,19 @@
 # GitHub Actions cache
 /.github/.cache
 
-# dbt directories
+# dbt core project
 target/
 logs/
 dbt_packages/
 dbt_modules/
 
-# Docker cache
+# Docker cache / volumes
 docker/logs/
 docker/minio/
 docker/plugins/
 docker/postgres/
 
-# DBT cache (inside banking_dbt project folder)
+# dbt project inside banking_dbt (only cache/output, NOT source)
 banking_dbt/.dbt/
 banking_dbt/logs/
 banking_dbt/target/
@@ -22,8 +22,9 @@ banking_dbt/target/
 __pycache__/
 *.pyc
 
-# Secrets and config
+# Secrets and env files
 .env
+.env.*
 
 # IDE & OS files
 .vscode/
@@ -32,3 +33,4 @@ __pycache__/
 
 # Docker override
 docker-compose.override.yml
+
