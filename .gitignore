@@ -1,5 +1,9 @@
 # GitHub Actions cache
 /.github/.cache
+target/
+logs/
+dbt_packages/
+dbt_modules/
 
 # Docker cache
 docker/logs/
